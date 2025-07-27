@@ -1,0 +1,62 @@
+Text Scrambler — Usage Instructions
+
+    Prepare Your Text Layer
+
+        Create or select a Text layer in your composition.
+
+    Add Expression Controls
+    On that same layer, apply three sliders via Effect → Expression Controls → Slider Control:
+
+        Speed
+
+            Controls how fast the effect plays (units ≈ loops per second).
+
+        Direction
+
+            Rename this Slider to Animation Mode (1=Left→Right; 2=Right→Left; 3=Random; 4=Ping-Pong)
+
+            Set its Min = 1, Max = 4, Step = 1.
+
+        Loop Duration
+
+            How many seconds each cycle lasts (minimum 0.001).
+
+    Paste the Expression
+
+        Twirl open Text → Source Text on your layer.
+
+        Alt-click (Option-click on Mac) the stopwatch icon next to Source Text.
+
+        Delete any existing code and paste the full Text Scrambler expression.
+
+    Adjust Parameters
+
+        Speed: higher values → faster scrambling.
+
+        Animation Mode: choose 1–4 to switch between:
+
+            Left→Right (region-based glitch moving left to right)
+
+            Right→Left (same, reversed)
+
+            Random (uniform glitch across all characters)
+
+            Ping-Pong (two glitch-blocks scanning back and forth)
+
+        Loop Duration: length of one full cycle in seconds.
+
+    Fine-Tuning
+
+        Tweak Speed vs. Loop Duration to get the right pacing.
+
+        Increase Event Probability (eventProb1 in code) for more frequent single-character glitches in modes 1–2.
+
+        If you want to expand the effect (more modes, different block sizes), simply edit the expression’s parameters.
+
+    Reuse as a Preset
+
+        Select the three controls (Speed, Direction slider, Source Text).
+
+        Go to Animation → Save Animation Preset…, name it Text Scrambler, and save.
+
+        Later, apply Text Scrambler from Effects & Presets → Animation Presets → User Presets to any other text layer in any project.
